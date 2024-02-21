@@ -1,0 +1,660 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.titleTop {
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(255, 102, 0);
+    position: absolute;
+    top: 30px;
+    left: 80px;
+    cursor: pointer;
+}
+
+.inputs {
+    display: inline-block;
+    position: absolute;
+    top: 40px;
+    left: 350px;
+}
+
+.inputs input {
+    width: 300px;
+    height: 40px;
+    border: 1px solid gray;
+    padding-left: 45px;
+    font-weight: bold;
+}
+
+.inputs i {
+    position: absolute;
+    font-size: 25px;
+    opacity: 0.5;
+    top: 7px;
+    left: 10px;
+}
+
+.inputs button {
+    position: relative;
+    right: 4px;
+    height: 40px;
+    border: 1px solid gray;
+    background-color: gray;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+}
+
+input[type="search"]:focus {
+    outline: none;
+    border-color: orange;
+}
+
+.topContainer {
+    position: absolute;
+    left: 320px;
+}
+
+.topContainer ul {
+    display: flex;
+}
+
+.topContainer ul li {
+    list-style: none;
+    margin-right: 25px;
+}
+
+.topContainer ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.location {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    top: 40px;
+    left: 720px;
+    cursor: pointer;
+}
+
+.location i {
+    position: absolute;
+    left: 10px;
+    top: 8px;
+    font-size: 24px;
+}
+
+.location h4 {
+    opacity: 0.8;
+    position: absolute;
+    top: -20px;
+    left: 40px;
+}
+
+.location p {
+    position: absolute;
+    left: 40px;
+    top: 5px;
+    color: orange;
+    font-weight: bold;
+}
+
+.loginContainer {
+    width: 160px;
+    height: 40px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 40px;
+    left: 900px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.loginContainer i {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.loginContainer h4 {
+    position: absolute;
+    top: -20px;
+    left: 45px;
+}
+
+.loginContainer p {
+    position: absolute;
+    top: 5px;
+    left: 45px;
+}
+
+.basketContainer {
+    width: 160px;
+    height: 40px;
+    border: 1px solid gray;
+    position: absolute;
+    top: 40px;
+    left: 1100px;
+    border-radius: 8px;
+    background-color: rgba(128, 128, 128, 0.638);
+    cursor: pointer;
+}
+
+.basketContainer i {
+    color: white;
+    font-size: 24px;
+    position: absolute;
+    left: 10px;
+    top: 6px;
+}
+
+.basketContainer p {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+}
+
+.basketValue {
+    background-color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.horizontal {
+    position: absolute;
+    top: 95px;
+    width: 100%;
+    height: 5px;
+    background-color: gray;
+}
+
+.optionContainer {
+    position: absolute;
+    top: 84px;
+    left: 200px;
+}
+
+.optionContainer ul {
+    display: flex;
+    width: 100%;
+}
+
+.optionContainer ul li {
+    list-style: none;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 17px;
+    transition: all 1s;
+}
+
+.optionContainer ul li:hover {
+    background-color: gray;
+    transition: all 1s;
+    color: white;
+}
+
+.siteBg {
+    width: 100%;
+    height: 553px;
+    background: linear-gradient(to right, pink, rgba(24, 210, 216, 0.481));
+    position: absolute;
+    top: 150px;
+}
+
+.firstContainerSite,
+.secondContainerSite {
+    width: 600px;
+    height: 400px;
+    background-color: white;
+    position: absolute;
+    border-radius: 16px;
+}
+
+.firstContainerSite {
+    top: 100px;
+    left: 110px;
+}
+
+.secondContainerSite {
+    top: 100px;
+    left: 800px;
+}
+
+.firstContainerSite p:first-child,
+.secondContainerSite p:first-child {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.firstContainerSite button,
+.secondContainerSite button {
+    background-color: blue;
+    border: none;
+    position: absolute;
+    top: 300px;
+    left: 40px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.firstContainerSite p:nth-child(2),
+.secondContainerSite p:nth-child(2) {
+    position: absolute;
+    top: 100px;
+    left: 40px;
+    font-size: 20px;
+}
+
+.firstContainerSite p:nth-child(3),
+.secondContainerSite p:nth-child(3) {
+    position: absolute;
+    top: 125px;
+    left: 40px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.firstContainerSite img,
+.secondContainerSite img {
+    width: 300px;
+    height: 360px;
+    position: relative;
+    top: 20px;
+    left: 280px;
+}
+
+.text {
+    font-weight: bold;
+    font-size: 35px;
+    position: absolute;
+    top: 730px;
+    left: 85px;
+}
+
+.product1,
+.product2,
+.product3,
+.product4,
+.product5,
+.product6,
+.product7,
+.product8,
+.product9,
+.product10 {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    border: 1px solid gray;
+    border-radius: 16px;
+    transition: all 1s;
+}
+
+.product1 {
+    top: 820px;
+    left: 80px;
+}
+
+.product2 {
+    top: 820px;
+    left: 350px;
+}
+
+.product3 {
+    top: 820px;
+    left: 620px;
+}
+
+.product4 {
+    top: 820px;
+    left: 890px;
+}
+
+.product5 {
+    top: 820px;
+    left: 1160px;
+}
+
+.product6 {
+    top: 1250px;
+    left: 80px;
+}
+
+.product7 {
+    top: 1250px;
+    left: 350px;
+}
+
+.product8 {
+    top: 1250px;
+    left: 620px;
+}
+
+.product9 {
+    top: 1250px;
+    left: 890px;
+}
+
+.product10 {
+    top: 1250px;
+    left: 1160px;
+}
+
+.product1 img,
+.product2 img,
+.product3 img,
+.product4 img,
+.product5 img,
+.product6 img,
+.product7 img,
+.product8 img,
+.product9 img,
+.product10 img {
+    position: absolute;
+    top: 90px;
+    width: 100%;
+    height: 200px;
+}
+
+.product1 p,
+.product2 p,
+.product3 p,
+.product4 p,
+.product5 p,
+.product6 p,
+.product7 p,
+.product8 p,
+.product9 p,
+.product10 p {
+    font-size: 18px;
+    color: gray;
+    font-weight: bold;
+    text-align: center;
+}
+
+.product1 :nth-child(3),
+.product2 :nth-child(3),
+.product3 :nth-child(3),
+.product4 :nth-child(3),
+.product5 :nth-child(3),
+.product6 :nth-child(3),
+.product7 :nth-child(3),
+.product8 :nth-child(3),
+.product9 :nth-child(3),
+.product10 :nth-child(3) {
+    position: relative;
+    top: 250px;
+    color: orangered;
+    font-size: 35px;
+}
+
+.product1:hover,
+.product2:hover,
+.product3:hover,
+.product4:hover,
+.product5:hover,
+.product6:hover,
+.product7:hover,
+.product8:hover,
+.product9:hover,
+.product10:hover {
+    box-shadow: 3px 3px 10px gray;
+    transform: scale(1.03);
+    transition: all 1s;
+}
+
+.product1:hover .productText1,
+.product2:hover .productText2,
+.product3:hover .productText3,
+.product4:hover .productText4,
+.product5:hover .productText5,
+.product6:hover .productText6,
+.product7:hover .productText7,
+.product8:hover .productText8,
+.product9:hover .productText9,
+.product10:hover .productText10 {
+    display: none;
+}
+
+.productBuyButton1,
+.productBuyButton2,
+.productBuyButton3,
+.productBuyButton4,
+.productBuyButton5,
+.productBuyButton6,
+.productBuyButton7,
+.productBuyButton8,
+.productBuyButton9,
+.productBuyButton10 {
+    position: absolute;
+    padding: 18px;
+    top: 320px;
+    left: 65px;
+    border-radius: 8px;
+    background-color: rgb(255, 0, 0);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+.product1:hover .productBuyButton1,
+.product2:hover .productBuyButton2,
+.product3:hover .productBuyButton3,
+.product4:hover .productBuyButton4,
+.product5:hover .productBuyButton5,
+.product6:hover .productBuyButton6,
+.product7:hover .productBuyButton7,
+.product8:hover .productBuyButton8,
+.product9:hover .productBuyButton9,
+.product10:hover .productBuyButton10 {
+    display: block;
+}
+
+.text2 {
+    position: absolute;
+    top: 1700px;
+    left: 85px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.markProducts div {
+    width: 180px;
+    height: 90px;
+    border: 1px solid gray;
+    position: absolute;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.markProducts div:hover {
+    box-shadow: 3px 3px 10px gray;
+    transform: scale(1.05);
+    transition: all 1s;
+}
+
+.markProducts div img {
+    width: 120px;
+    height: 50px;
+    position: absolute;
+    top: 23px;
+    left: 25px;
+}
+
+.markProducts1 {
+    top: 1800px;
+    left: 80px;
+}
+
+.markProducts2 {
+    top: 1800px;
+    left: 270px;
+}
+
+.markProducts3 {
+    top: 1800px;
+    left: 460px;
+}
+
+.markProducts4 {
+    top: 1800px;
+    left: 650px;
+}
+
+.markProducts5 {
+    top: 1800px;
+    left: 840px;
+}
+
+.markProducts6 {
+    top: 1800px;
+    left: 1030px;
+}
+
+.markProducts7 {
+    top: 1800px;
+    left: 1220px;
+}
+
+.horizontal1,
+.horizontal2 {
+    width: 100%;
+    border-bottom: 2px solid gray;
+    position: absolute;
+}
+
+.horizontal1 {
+    top: 1950px;
+}
+
+.horizontal2 {
+    top: 2085px;
+}
+
+.containerLiberties div {
+    position: absolute;
+    top: 1980px;
+}
+
+.liberties1 {
+    left: 80px;
+}
+
+.liberties2 {
+    left: 420px;
+}
+
+.liberties3 {
+    left: 760px;
+}
+
+.liberties4 {
+    left: 1100px;
+}
+
+.containerLiberties div p {
+    position: relative;
+    cursor: pointer;
+    width: 210px;
+    bottom: 70px;
+    left: 88px;
+}
+.containerLiberties div img{
+    cursor: pointer;
+}
+.containerLiberties div h3 {
+    position: relative;
+    display: inline;
+    cursor: pointer;
+    bottom: 60px;
+}
+
+.bottomContainer {
+    display: flex;
+}
+
+.bottomContainer div {
+    position: absolute;
+    top: 2100px;
+}
+
+.bottomContainer div ul li {
+    list-style: none;
+}
+
+.bottomContainer div ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.category1 {
+    left: 80px;
+}
+
+.category2 {
+    left: 370px;
+}
+
+.category3 {
+    left: 660px;
+}
+
+.category4 {
+    left: 950px;
+}
+
+.category5 {
+    left: 1240px;
+}
+
+.category1 ul,
+.category2 ul,
+.category3 ul,
+.category4 ul,
+.category5 ul {
+    position: relative;
+    right: 40px;
+    bottom: 5px;
+}
+
+.category1 ul li a:hover,
+.category2 ul li a:hover,
+.category3 ul li a:hover,
+.category4 ul li a:hover,
+.category5 ul li a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.bottomContainer div ul li {
+    margin-top: 10px;
+}
